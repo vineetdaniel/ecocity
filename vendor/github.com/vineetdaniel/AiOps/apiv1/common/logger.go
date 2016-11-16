@@ -57,7 +57,7 @@ func initLog(
 func setLogLevel(level Level) {
 
 	// Creates os.*File, which has implemented io.Writer intreface
-	f, err := os.OpenFile("$HOME/logs.txt", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+	f, err := os.OpenFile("/home/vineetdaniel/logs.txt", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil {
 		log.Fatalf("Error opening log file: %s", err.Error())
 	}
