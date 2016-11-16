@@ -25,9 +25,9 @@ type AppClaims struct {
 // location of private/public key files
 const (
 	// openssl genrsa -out app.rsa 1024
-	privKeyPath = "keys/app.rsa"
+	privKeyPath = "/Users/vineetdaniel/GO/src/github.com/vineetdaniel/ecocity/keys/app.rsa"
 	// openssl rsa -in app.rsa -pubout > app.rsa.pub
-	pubKeyPath = "keys/app.rsa.pub"
+	pubKeyPath = "/Users/vineetdaniel/GO/src/github.com/vineetdaniel/ecocity/keys/app.rsa.pub"
 )
 
 // Private key for signing and public key for verification
