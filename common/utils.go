@@ -47,7 +47,7 @@ func initConfig() {
 
 // Reads config.json and decode into AppConfig
 func loadAppConfig() {
-	file, err := os.Open("common/config.json")
+	file, err := os.Open("/Users/vineetdaniel/GO/src/github.com/vineetdaniel/ecocity/common/config.json")
 	defer file.Close()
 	if err != nil {
 		log.Fatalf("[loadConfig]: %s\n", err)
