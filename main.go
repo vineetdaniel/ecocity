@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/codegangsta/negroni"
-	"github.com/vineetdaniel/AiOps/apiv1/common"
-	"github.com/vineetdaniel/AiOps/apiv1/routers"
+	"github.com/vineetdaniel/ecocity/common"
+	"github.com/vineetdaniel/ecocity/routers"
 )
 
 func main() {
