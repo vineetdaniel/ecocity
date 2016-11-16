@@ -29,26 +29,6 @@
 			"Rev": "757bef944d0f21880861c2dd9c871ca543023cba"
 		},
 		{
-			"ImportPath": "github.com/vineetdaniel/ecocity/common",
-			"Rev": "186d91806e2e7543dcfe259b5cfb261a82c31206"
-		},
-		{
-			"ImportPath": "github.com/vineetdaniel/ecocity/controllers",
-			"Rev": "186d91806e2e7543dcfe259b5cfb261a82c31206"
-		},
-		{
-			"ImportPath": "github.com/vineetdaniel/ecocity/data",
-			"Rev": "186d91806e2e7543dcfe259b5cfb261a82c31206"
-		},
-		{
-			"ImportPath": "github.com/vineetdaniel/ecocity/models",
-			"Rev": "186d91806e2e7543dcfe259b5cfb261a82c31206"
-		},
-		{
-			"ImportPath": "github.com/vineetdaniel/ecocity/routers",
-			"Rev": "186d91806e2e7543dcfe259b5cfb261a82c31206"
-		},
-		{
 			"ImportPath": "golang.org/x/crypto/bcrypt",
 			"Rev": "9e590154d2353f3f5e1b24da7275686040dcf491"
 		},
