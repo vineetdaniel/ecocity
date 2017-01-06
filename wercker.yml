@@ -33,6 +33,8 @@ build:
                     go version
                     go get -u github.com/Masterminds/glide
                     export PATH=$WERCKER_SOURCE_DIR/bin:$PATH
+                    ls 
+                    pwd
                     glide install
       - script:
                 name: go build
