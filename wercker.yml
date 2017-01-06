@@ -11,7 +11,7 @@ dev:
     - script:
         name: go get
         code: |
-          cd $WRECKER_SOURCE_DIR
+          cd $WERCKER_SOURCE_DIR
           go version
           go get -u github.com/Masterminds/glide
           export PATH=$WERCKER_SOURCE_DIR/bin:$PATH
