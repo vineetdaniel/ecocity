@@ -3,7 +3,7 @@ box: golang
 dev: 
    steps:
     - setup-go-workspace:
-        package-dir: github.com/cloudnativego/hello
+        package-dir: github.com/vineetdaniel/hello
 
     - script:
         name: env
@@ -22,7 +22,7 @@ dev:
 build:
     steps:
       - setup-go-workspace:
-            pakcage-dir: github.com/cloudnativego/hello
+            pakcage-dir: github.com/vineetdaniel/hello
       - script:
                 name: env
                 code: env
@@ -60,7 +60,7 @@ deploy:
             cmd: /pipeline/source/hello
             port: "8080"
             tag: latest
-            repository: cloundnativego/book-hello
+            repository: vineetdaniel/eco
             registry: https://registry.hub.docker.com
         - cng/cf-deploy:
             api: $API
@@ -69,4 +69,4 @@ deploy:
             org: $ORG
             space: $SPACE
             appname: wercker-step-hello
-            docker_image: cloudnativego/book-hello
+            docker_image: vineetdaniel/eco
