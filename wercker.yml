@@ -36,8 +36,6 @@ build:
                     ls 
                     pwd
                     glide init
-                    glide up
-                    glide install
       - script:
                 name: go build
                 code: |
