@@ -35,7 +35,8 @@ build:
                     export PATH=$WERCKER_SOURCE_DIR/bin:$PATH
                     ls 
                     pwd
-                    glide help
+                    glide init --quiet
+                    glide install
       - script:
                 name: go build
                 code: |
