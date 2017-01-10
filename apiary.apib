@@ -14,13 +14,15 @@ You may create a user using this API endpoint.
 
 
 + Attributes
-    + id (string) - The user id
+    + id (number) - mongodb objectID
     + email: john@appleseed.com (string) - email of the user
     + name: john (string) - name of the user
     + vehicle_type: SUV (string) - type of the vehicle SUV, Small, Sedan
     + registration_no: DLXXXXX (string) - DLxxxxx
     + registration_cert: S3_Path (string) - scanned copy of RC
     + identity_type: S3_path (string) - scanned copy of identity
+    + registration_plate: S3_path (string) - image of registration plate
+    + client_timestamp: 29030320 (number) - date registered on
     
 
 + Request (application/json)
