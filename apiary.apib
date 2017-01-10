@@ -3,7 +3,7 @@ HOST: http://ecocity.apiblueprint.org/
 
 # ecocity-drivers
 
-Drivers is a simple API allowing consumers to view polls and vote in them.
+Drivers is a simple microservice that allows all operations related to drivers
 
 ## Drivers Collection [/drivers]
 
@@ -17,6 +17,11 @@ You may create a user using this API endpoint.
     + id (string) - The user id
     + email: john@appleseed.com (string) - email of the user
     + name: john (string) - name of the user
+    + vehicle_type: SUV (string) - type of the vehicle SUV, Small, Sedan
+    + registration_no: DLXXXXX (string) - DLxxxxx
+    + registration_cert: S3_Path (string) - scanned copy of RC
+    + identity_type: S3_path (string) - scanned copy of identity
+    
 
 + Request (application/json)
 
