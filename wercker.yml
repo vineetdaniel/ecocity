@@ -62,11 +62,11 @@ deploy:
             tag: latest
             repository: vineetdaniel/eco
             registry: https://registry.hub.docker.com
-        - cng/cf-deploy:
-            api: $API
-            user: $USER
-            password: $PASSWORD
-            org: $ORG
-            space: $SPACE
-            appname: wercker-step-hello
-            docker_image: vineetdaniel/eco
+#        - cng/cf-deploy:
+#            api: $API
+#            user: $USER
+#            password: $PASSWORD
+#            org: $ORG
+#            space: $SPACE
+#            appname: wercker-step-hello
+#            docker_image: vineetdaniel/eco
