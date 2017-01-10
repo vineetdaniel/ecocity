@@ -8,9 +8,10 @@ Drivers is a simple microservice that allows all operations related to drivers
 ## Drivers Collection [/drivers]
 
 
-### Create a New User [POST]
+### Create a New Driver [POST]
 
-You may create a user using this API endpoint.
+You may create a user using this API endpoint after succesful social authentication
+
 
 
 + Attributes
@@ -23,6 +24,9 @@ You may create a user using this API endpoint.
     + identity_type: S3_path (string) - scanned copy of identity
     + registration_plate: S3_path (string) - image of registration plate
     + client_timestamp: 29030320 (number) - date registered on
+    + driver_active: true (boolean) - driver is active on platform or not
+    + driver_blocked: false (boolean) - whether driver has been blacklisted or not
+    
     
 
 + Request (application/json)
@@ -30,3 +34,35 @@ You may create a user using this API endpoint.
 + Request (application/yaml)
 
 + Response 201
+
+### Update Driver [PUT /driver/{id}]
+
+Update the driver profile
+
++ Parameters
+    + id (number) - mongodb objectId
+    
++ Request (application/json)
+
++ Response 201
+
+# Group ecocity-locations
+
+This is a microservice that will handle all location related operations
+
+### Set Driver location [POST /location/driver/{id}]
++ Attributes 
+    + id (number) - mongodb objectID
+    + shift_state: true (boolean) - whether driver is taking pool or not
+    + speed: true (boolean)                
+    + latitude: 33.794839 (number)       
+    + longitude: 84.401593 (number)    
+    + heading: 4 (number)               
+    + gps_as_of: 1359863204       
+              
++ Request (application/json)
+
++ Response 201
+
+
+
